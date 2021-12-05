@@ -21,6 +21,7 @@
     text-align: center;
 
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+    cursor: pointer;
 }
 
 .button_primary {
@@ -36,12 +37,6 @@
     color: var(--grey-4);
 }
 
-.button:hover {
-    cursor: pointer;
-}
-.button:active {
-    cursor: default;
-}
 .button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
