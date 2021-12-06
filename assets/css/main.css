@@ -17,6 +17,9 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+    --primary-1: #4263EB;
+    --secondary-1: #5028C6;
 }
 
 * {
