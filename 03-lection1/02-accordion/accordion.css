@@ -2,18 +2,14 @@
 .accordion {
     box-sizing: border-box;
     width: 730px;
+}
+.accordion__item {
     background: var(--white);
     border: 1px solid var(--grey-3);
     border-radius: 8px;
 
     margin-bottom: 8px;
     padding: 23px 31px 23px 31px;
-
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
 }
 
 .accordion__title {
@@ -27,7 +23,15 @@
     color: var(--grey-4);
 }
 
-.accordion:last-child {
+.text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.accordion__item:last-child {
     margin-bottom: 0;
 }
 
