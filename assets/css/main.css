@@ -20,8 +20,18 @@
 
     --primary-1: #4263EB;
     --secondary-1: #5028C6;
+    --preview: #F9FAFC;
 }
 
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+html, body {
+    height: 100%;
 }

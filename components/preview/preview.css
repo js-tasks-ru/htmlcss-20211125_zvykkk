@@ -1,0 +1,10 @@
+.preview {
+    background: var(--preview);
+    padding: 67px 0 204px;
+}
+
+.preview__grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
