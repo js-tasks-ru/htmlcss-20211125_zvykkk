@@ -1,7 +1,6 @@
 .card {
     height: 367px;
     box-sizing: border-box;
-    padding: 30px 25px 30px 25px;
 
     flex-basis: 350px;
 
@@ -17,8 +16,12 @@
     flex-grow: 1;
 }
 
+.card__body {
+    padding: 30px 25px 30px 25px;
+}
+
 .card__title {
-    margin: auto;
+    margin: 0;
 
     font-family: Roboto,sans-serif;
     font-style: normal;
