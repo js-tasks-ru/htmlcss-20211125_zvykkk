@@ -1,0 +1,21 @@
+.component {
+    box-sizing: border-box;
+    background: var(--white);
+    box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+
+    padding: 32px 48px 32px 48px;
+}
+
+.component__title {
+    font-size: 28px;
+    line-height: 38px;
+
+    color: var(--grey-4);
+
+    margin: 0;
+}
+
+.component__body {
+    padding-top: 24px;
+}
