@@ -18,9 +18,12 @@
     --primary: var(--blue);
     --secondary: var(--purple);
 
-    --primary-1: #4263EB;
+    --primary-1: #4263eb;
     --secondary-1: #5028C6;
     --preview: #F9FAFC;
+    --calendar: #334D6E;
+    --calendar-day: #90A0B7;
+    --calendar-between-active: #A0B1F5;
 }
 
 * {
