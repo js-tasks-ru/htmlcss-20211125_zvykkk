@@ -26,23 +26,24 @@
     background: var(--grey-2);
 }
 
-.skeleton__title-body {
-    flex-basis: 257px;
+.skeleton__box{
     display: flex;
+    flex-grow: 1;
     gap: 8px;
     flex-direction: column;
-}
-
-.skeleton__body {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
 }
 
 .skeleton__item{
     height: 20px;
     background: var(--linear-gradient);
 }
-.width {
-    width: 67%;
+
+.skeleton__item_small {
+    width: 40%;
 }
+
+.skeleton__item_medium {
+    width: 60%;
+}
+
+
