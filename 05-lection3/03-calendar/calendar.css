@@ -76,8 +76,8 @@
     background: var(--calendar-between-active);
 }
 
-.calendar__item-whitespace {
-    grid-area: 2/1/3/5;
+.calendar__item_whitespace {
+    padding-bottom: 42px;
 }
 
 
