@@ -1,9 +1,10 @@
 /* Стилизация аккордеона */
 .accordion {
     box-sizing: border-box;
-    width: 730px;
+    max-width: 730px;
 }
 .accordion__item {
+    position: relative;
     background: var(--white);
     border: 1px solid var(--grey-3);
     border-radius: 8px;
@@ -38,4 +39,23 @@
 .accordion__title::-webkit-details-marker {
     display: none;
 }
+
+.marker{
+    display: inline-block;
+
+    position: absolute;
+    right: 32px;
+    top: 32px;
+
+    height: 8px;
+    width: 16px;
+    color: var(--grey-4);
+
+    cursor: pointer;
+}
+
+details[open] .marker {
+    transform: rotate(180deg);
+}
+
 
