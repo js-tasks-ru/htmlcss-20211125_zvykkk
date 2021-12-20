@@ -54,7 +54,7 @@
     cursor: pointer;
 }
 
-details[open] .marker {
+.accordion__item[open] .marker {
     transform: rotate(180deg);
 }
 
