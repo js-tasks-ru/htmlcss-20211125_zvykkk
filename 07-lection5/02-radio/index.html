@@ -4,8 +4,51 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./radio.css">
+        <style class='text/css'>
+            .wrapper {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+        </style>
     </head>
     <body>
-
+        <div class='wrapper'>
+            <label class='radio'>
+                <input type='radio' class='radio__input' name='radio-name'>
+                <span class='radio__state'>
+                        <span class='radio__control'>
+                            <svg class='radio__icon' width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect class='radio__icon-circle' width="18" height="18" rx="9" fill="#4263EB"/>
+                            </svg>
+                        </span>
+                        <span class='radio__label'>Default</span>
+                    </span>
+            </label>
+            <label class='radio'>
+                <input type='radio' class='radio__input' name='radio-name'>
+                <span class='radio__state'>
+                        <span class='radio__control'>
+                            <svg class='radio__icon' width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect class='radio__icon-circle' width="18" height="18" rx="9" fill="#4263EB"/>
+                            </svg>
+                        </span>
+                        <span class='radio__label'>Checked</span>
+                    </span>
+            </label>
+            <label class='radio'>
+                <input type='radio' class='radio__input' name='radio-name' disabled>
+                <span class='radio__state'>
+                        <span class='radio__control'>
+                            <svg class='radio__icon' width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect class='radio__icon-circle' width="18" height="18" rx="9" fill="#4263EB"/>
+                            </svg>
+                        </span>
+                        <span class='radio__label'>Disabled</span>
+                    </span>
+            </label>
+        </div>
     </body>
 </html>
