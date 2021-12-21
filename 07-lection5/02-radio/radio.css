@@ -33,10 +33,6 @@
     transform: translate(-50%, -50%);
 }
 
-.radio__icon-circle {
-    fill: var(--white);
-}
-
 .radio__label {
     font-family: Inter, sans-serif;
     font-style: normal;
@@ -53,8 +49,11 @@
     border-color: var(--primary-1);
 }
 
-.radio__input:checked ~ .radio__state .radio__icon-circle {
-    fill: var(--primary-1);
+.radio__input:checked ~ .radio__state .radio__icon {
+    width: 18px;
+    height: 18px;
+    background: var(--primary-1);
+    border-radius: 9px;
 }
 
 .radio__input:focus ~ .radio__state .radio__label {
@@ -68,10 +67,6 @@
 .radio__input[disabled] ~ .radio__state .radio__control {
     background: var(--grey-2);
     border-color: var(--grey-2);
-}
-
-.radio__input[disabled] ~ .radio__state .radio__icon {
-    display: none;
 }
 
 .radio__input[disabled] ~ .radio__state .radio__label {
