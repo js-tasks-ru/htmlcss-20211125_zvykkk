@@ -1,0 +1,68 @@
+.tabs {
+
+}
+
+.tabs__radio {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    opacity: 0;
+}
+
+.tabs__scroller {
+    position: absolute;
+    top: -104px;
+    left: 0;
+
+    display: flex;
+    gap: 40px;
+}
+
+.tabs__label {
+    font-family: Inter,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: var(--grey-3);
+    box-sizing: border-box;
+    border-bottom: 5px solid inherit;
+    padding-bottom: 8px;
+
+    cursor: pointer;
+}
+
+.tabs__radio_all:checked ~.tabs__scroller .tabs__label_all {
+    color: var(--black);
+    border-bottom: 5px solid var(--black);
+}
+
+.tabs__radio_elements:checked ~.tabs__scroller .tabs__label_elements {
+    color: var(--black);
+    border-bottom: 5px solid var(--black);
+}
+
+.tabs__radio_containers:checked ~.tabs__scroller .tabs__label_containers {
+    color: var(--black);
+    border-bottom: 5px solid var(--black);
+}
+
+.tabs__radio_templates:checked ~.tabs__scroller .tabs__label_templates {
+    color: var(--black);
+    border-bottom: 5px solid var(--black);
+}
+
+.tabs__radio_elements:checked ~.preview__grid .tabs__card_elements {
+    display: none;
+}
+
+.tabs__radio_containers:checked ~.preview__grid .tabs__card_containers {
+    display: none;
+}
+
+.tabs__radio_templates:checked ~.preview__grid .tabs__card_templates {
+    display: none;
+}
+
+
+
