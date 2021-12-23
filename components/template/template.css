@@ -1,21 +1,23 @@
-.template {
-    height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+@media screen and (min-width: 768px) {
+    .template {
+        height: 100%;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
 
-    background: var(--template);
-}
+        background: var(--template);
+    }
 
-.template__main {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    column-gap: 56px;
-    justify-content: center;
+    .template__main {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 56px;
+        justify-content: center;
 
-    padding-top: 36px;
+        padding-top: 36px;
 
-    font-family: Inter,sans-serif;
-    font-style: normal;
-    font-weight: normal;
+        font-family: Inter,sans-serif;
+        font-style: normal;
+        font-weight: normal;
+    }
 }
 
