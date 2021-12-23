@@ -52,16 +52,24 @@
     border-bottom: 5px solid var(--black);
 }
 
+.tabs__radio_all:checked ~.preview__grid .card {
+    display: flex;
+    flex-direction: column;
+}
+
 .tabs__radio_elements:checked ~.preview__grid .tabs__card_elements {
-    display: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .tabs__radio_containers:checked ~.preview__grid .tabs__card_containers {
-    display: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .tabs__radio_templates:checked ~.preview__grid .tabs__card_templates {
-    display: none;
+    display: flex;
+    flex-direction: column;
 }
 
 

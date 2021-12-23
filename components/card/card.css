@@ -8,8 +8,7 @@
     box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
 
-    display: flex;
-    flex-direction: column;
+    display: none;
 }
 
 .card__component-preview {
