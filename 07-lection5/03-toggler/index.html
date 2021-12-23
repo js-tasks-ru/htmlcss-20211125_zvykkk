@@ -4,8 +4,51 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./toggler.css">
+        <style class='text/css'>
+            .wrapper {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+        </style>
     </head>
     <body>
-
+        <div class='wrapper'>
+            <label class='toggler'>
+                <input type='checkbox' class='toggler__input'>
+                <span class='toggler__state'>
+                      <span class='toggler__control'>
+                            <svg class='toggler__icon' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="24" rx="12" fill="currentColor"/>
+                            </svg>
+                      </span>
+                      <span class='toggler__label'>Off</span>
+                </span>
+            </label>
+            <label class='toggler'>
+                <input type='checkbox' class='toggler__input'>
+                <span class='toggler__state'>
+                     <span class='toggler__control'>
+                           <svg class='toggler__icon' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="24" rx="12" fill="currentColor"/>
+                           </svg>
+                     </span>
+                     <span class='toggler__label'>On</span>
+                </span>
+            </label>
+            <label class='toggler'>
+                <input type='checkbox' class='toggler__input' disabled>
+                <span class='toggler__state'>
+                     <span class='toggler__control'>
+                         <svg class='toggler__icon' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <rect width="24" height="24" rx="12" fill="currentColor"/>
+                         </svg>
+                     </span>
+                     <span class='toggler__label'>Disabled</span>
+                </span>
+            </label>
+        </div>
     </body>
 </html>
