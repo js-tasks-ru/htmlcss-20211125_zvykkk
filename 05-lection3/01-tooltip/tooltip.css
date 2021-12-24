@@ -6,6 +6,10 @@
 .tooltip__icon {
     cursor: pointer;
     display: inline-block;
+
+    height: 22px;
+    width: 22px;
+    color: var(--black);
 }
 
 .tooltip__bubble {
