@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../components/footer/footer.css">
     <link rel="stylesheet" href="../components/component/component.css">
     <link rel="stylesheet" href="../components/menu/menu.css">
+    <link rel="stylesheet" href="../09-lection7/01-burger-menu/burger-menu.css">
+    <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style type='text/css'>
         body {
@@ -18,6 +20,13 @@
     <div class='template'>
       <header class='header header_template'>
         <div class='header__logo header__logo_template'></div>
+        <div class='burger-menu__control-open'>
+          <svg class='burger-menu__icon-open' id='burger-menu-open' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
       </header>
       <main class='template__main'>
         <aside class='menu'>
@@ -31,6 +40,30 @@
             <li class='menu__item'><a class='menu__item-link' href=''>Custom from elements</a></li>
             <li class='menu__item'><a class='menu__item-link' href=''>Main page</a></li>
           </ul>
+        </aside>
+        <aside class='burger-menu'>
+          <div class='burger-menu__body' id='burger-menu'>
+            <div class='burger-menu__control-close'>
+              <div class='burger-menu__icon-circle'>
+                <svg class='burger-menu__icon-close' id='burger-menu-close' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 6L6 18" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6 6L18 18" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class='burger-menu__list'>
+              <p class='burger-menu__title'>Components</p>
+              <ul class='burger-menu__items'>
+                <li class='burger-menu__item'><a class='burger-menu__item-link' href=''>Modal</a></li>
+                <li class='burger-menu__item'><a class='burger-menu__item-link' href=''>Tooltip</a></li>
+                <li class='burger-menu__item'><a class='burger-menu__item-link' href=''>Avatar</a></li>
+                <li class='burger-menu__item'><a class='burger-menu__item-link' href=''>Calendar</a></li>
+                <li class='burger-menu__item'><a class='burger-menu__item-link' href=''>Histogram</a></li>
+                <li class='burger-menu__item'><a class='burger-menu__item-link' href=''>Custom from elements</a></li>
+                <li class='burger-menu__item'><a class='burger-menu__item-link' href=''>Main page</a></li>
+              </ul>
+            </div>
+          </div>
         </aside>
         <div class='component'>
           <p class='component__title'>Title</p>
