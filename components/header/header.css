@@ -1,7 +1,6 @@
 .header {
     background: var(--white);
     padding: 15px 15px 69px ;
-    border-bottom: 1px solid var(--grey-2);
 }
 
 .header__logo {
