@@ -13,12 +13,15 @@
     background: var(--white);
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .tabs__scroller {
     flex-basis: 1110px;
     display: flex;
     gap: 40px;
+    overflow-x: auto;
+    padding: 0 15px;
 }
 
 .tabs__label {
@@ -72,5 +75,9 @@
     display: flex;
 }
 
-
+@media screen and (min-width: 768px) {
+    .tabs__scroller {
+        padding: 0;
+    }
+}
 
