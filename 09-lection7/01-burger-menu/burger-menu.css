@@ -1,6 +1,4 @@
-.burger-menu {}
-
-.burger-menu__body {
+.burger-menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -11,16 +9,11 @@
     transition: transform 200ms ease-in-out;
 }
 
-.burger-menu__body[data-open] {
+.burger-menu[data-open] {
     transform: none;
 }
 
-.burger-menu__control-open {
-    position: absolute;
-    top: 20px;
-    left: 19px;
-}
-.burger-menu__control-close {
+.burger-menu__close {
     padding: 16px 12px;
 }
 
@@ -32,10 +25,6 @@
     border-radius: 14px;
     position: relative;
 
-    cursor: pointer;
-}
-
-.burger-menu__icon-open {
     cursor: pointer;
 }
 
@@ -90,9 +79,6 @@
 
 @media screen and (min-width: 768px) {
     .burger-menu {
-        display: none;
-    }
-    .burger-menu__control-open {
         display: none;
     }
 }

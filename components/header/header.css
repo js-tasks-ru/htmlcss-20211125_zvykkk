@@ -35,6 +35,16 @@
     padding-bottom: 0;
 }
 
+.header__burger-menu {
+    position: absolute;
+    top: 20px;
+    left: 19px;
+}
+
+.header__burger-menu-icon {
+    cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
     .header {
         padding: 25px 0 77px;
@@ -65,5 +75,9 @@
 
     .header__logo_template {
         padding-bottom: 0;
+    }
+
+    .header__burger-menu {
+        display: none;
     }
 }

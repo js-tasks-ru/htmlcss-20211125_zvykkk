@@ -48,3 +48,19 @@
 .button_alternate:hover {
     border-color: var(--grey-4);
 }
+
+.button_burger-menu {
+    position: absolute;
+    top: 20px;
+    left: 19px;
+}
+
+.button__icon_burger-menu {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .button_burger-menu {
+        display: none;
+    }
+}
