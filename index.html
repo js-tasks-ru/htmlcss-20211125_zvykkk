@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="./components/preview/preview.css">
         <link rel="stylesheet" href="./components/page/page.css">
         <link rel="stylesheet" href="./components/card/card.css">
+        <link rel="stylesheet" href="./components/tabs/tabs.css">
+
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <style type='text/css'>
             body {
@@ -24,42 +26,56 @@
                 </div>
             </header>
             <main class='preview'>
-                <div class='container'>
-                    <div class='preview__grid'>
-                        <div class='card'>
-                            <div class='card__component-preview'></div>
-                            <div class='card__body'>
-                                <p class='card__title'>Tooltip</p>
+                <div class="tabs">
+                        <input type="radio" class='tabs__radio tabs__radio_all' id="#all-tab" name='tabs' checked>
+                        <input type="radio" class='tabs__radio tabs__radio_elements' id="#elem-tab" name='tabs'>
+                        <input type="radio" class='tabs__radio tabs__radio_containers' id="#const-tab" name='tabs'>
+                        <input type="radio" class='tabs__radio tabs__radio_templates' id="#templ-tab" name='tabs'>
+                        <div class='tabs__label-wrapper'>
+                            <div class="tabs__scroller">
+                                <label class='tabs__label tabs__label_all' for="#all-tab">All components</label>
+                                <label class='tabs__label tabs__label_elements' for="#elem-tab">Elements</label>
+                                <label class='tabs__label tabs__label_containers' for="#const-tab">Containers</label>
+                                <label class='tabs__label tabs__label_templates' for="#templ-tab">Templates</label>
                             </div>
                         </div>
-                        <div class='card'>
-                            <div class='card__component-preview'></div>
-                            <div class='card__body'>
-                                <p class='card__title'>Custom form elements</p>
+                        <div class='container tabs__preview'>
+                        <div class='preview__grid '>
+                            <div class='card tabs__card tabs__card_containers'>
+                                <div class='card__component-preview'></div>
+                                <div class='card__body'>
+                                    <p class='card__title'>Tooltip</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class='card'>
-                            <div class='card__component-preview'></div>
-                            <div class='card__body'>
-                                <p class='card__title'>Calendar</p>
+                            <div class='card tabs__card tabs__card_elements'>
+                                <div class='card__component-preview'></div>
+                                <div class='card__body'>
+                                    <p class='card__title'>Custom form elements</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class='card'>
-                            <div class='card__component-preview'></div>
-                            <div class='card__body'>
-                                <p class='card__title'>Modal dialog</p>
+                            <div class='card tabs__card tabs__card_containers'>
+                                <div class='card__component-preview'></div>
+                                <div class='card__body'>
+                                    <p class='card__title'>Calendar</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class='card'>
-                            <div class='card__component-preview'></div>
-                            <div class='card__body'>
-                                <p class='card__title'>Histogram</p>
+                            <div class='card tabs__card tabs__card_containers'>
+                                <div class='card__component-preview'></div>
+                                <div class='card__body'>
+                                    <p class='card__title'>Modal dialog</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class='card'>
-                            <div class='card__component-preview'></div>
-                            <div class='card__body'>
-                                <p class='card__title'>Avatar</p>
+                            <div class='card tabs__card tabs__card_elements'>
+                                <div class='card__component-elements'></div>
+                                <div class='card__body'>
+                                    <p class='card__title'>Histogram</p>
+                                </div>
+                            </div>
+                            <div class='card tabs__card tabs__card_elements'>
+                                <div class='card__component-elements'></div>
+                                <div class='card__body'>
+                                    <p class='card__title'>Avatar</p>
+                                </div>
                             </div>
                         </div>
                     </div>
