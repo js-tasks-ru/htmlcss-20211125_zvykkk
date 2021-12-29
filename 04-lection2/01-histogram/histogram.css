@@ -7,21 +7,8 @@
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
     border-radius: 8px;
-
     padding: 16px 24px 24px 24px;
 }
-
-/*.histogram__body {*/
-/*    flex-basis: 354px;*/
-/*    flex-direction: column;*/
-
-/*    background: var(--white);*/
-/*    border: 1px solid var(--grey-3);*/
-/*    box-sizing: border-box;*/
-/*    border-radius: 8px;*/
-
-/*    padding: 16px 24px 24px 24px;*/
-/*}*/
 
 .histogram__information {
     display: flex;
@@ -80,4 +67,75 @@
 
     flex-basis: 9px;
     background: var(--primary-1);
+}
+
+.histogram_card {
+    flex-basis: 76px;
+    border-radius: 2px;
+    padding: 5px 7px 7px 7px;
+}
+
+.histogram__information_card {
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.histogram__view-all_card {
+    font-size: 9px;
+    line-height: 12px;
+}
+
+.histogram__title_card {
+    margin: 0 0 2px;
+    font-size: 9px;
+    line-height: 15px;
+}
+
+.histogram__number_card {
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.histogram__view_card {
+    height: 23px;
+}
+
+.histogram__item_card {
+    flex-basis: 2px;
+}
+
+@media screen and (min-width: 768px) {
+    .histogram_card {
+        flex-basis: 157px;
+        border-radius: 8px;
+        padding: 16px 24px 24px 24px;
+    }
+
+    .histogram__information_card {
+        padding-bottom: 39px;
+    }
+
+    .histogram__view-all_card {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .histogram__title_card {
+        margin: 0 0 6px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .histogram__number_card {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .histogram__view_card {
+        height: 50px;
+    }
+
+    .histogram__item_card {
+        flex-basis: 9px;
+    }
 }

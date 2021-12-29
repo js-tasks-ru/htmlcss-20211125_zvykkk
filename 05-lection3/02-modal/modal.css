@@ -34,8 +34,8 @@
     right: 15px;
     top: 15px;
 
-    height: 10px;
-    width: 10px;
+    height: 16px;
+    width: 16px;
     color: var(--grey-4);
 
     cursor: pointer;
@@ -63,4 +63,64 @@
     line-height: 24px;
 
     color: var(--grey-4);
+}
+
+.modal_card {
+    display: block;
+    position: relative;
+    padding: 10px;
+    width: auto;
+    height: auto;
+}
+
+.modal__window_card {
+    padding: 10px 10px 8px 10px;
+}
+
+.modal__content_card {
+    font-size: 8px;
+    line-height: 10px;
+}
+
+.modal__title_card {
+    margin: 0 0 8px;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.modal__close_card {
+    right: 10px;
+    top: 10px;
+    cursor: default;
+    height: 8px;
+    width: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .modal_card {
+        padding: 20px;
+    }
+
+    .modal__window_card {
+        padding: 15px 20px 16px 20px;
+    }
+
+    .modal__content_card {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .modal__title_card {
+        margin: 0 0 14px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .modal__close_card {
+        right: 15px;
+        top: 15px;
+        cursor: default;
+        height: 10px;
+        width: 10px;
+    }
 }

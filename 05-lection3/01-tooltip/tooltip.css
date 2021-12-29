@@ -18,11 +18,11 @@
     border-radius: 10px;
     padding: 13px 21px 8px;
 
-    font-family: Inter,sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 24px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
     color: var(--grey-2);
 
     position: absolute;
@@ -44,4 +44,41 @@
 
 .tooltip__icon:hover ~ .tooltip__bubble {
     display: inline-block;
+}
+
+.tooltip__icon_card {
+    height: 19px;
+    width: 19px;
+    position: relative;
+    bottom: -40px;
+    cursor: default;
+}
+
+.tooltip__bubble_card {
+    border-radius: 8px;
+    padding: 10px 19px 6px;
+    font-size: 13px;
+    line-height: 18px;
+
+    bottom: 0;
+    transform: translate(-50%);
+    display: inline-block;
+    cursor: default;
+}
+
+@media screen and (min-width: 768px) {
+    .tooltip__icon_card {
+        height: 22px;
+        width: 22px;
+        bottom: 0;
+    }
+
+    .tooltip__bubble_card {
+        border-radius: 10px;
+        padding: 13px 21px 8px;
+        font-size: 16px;
+        line-height: 24px;
+        bottom: 100%;
+        transform: translate(-50%, -9px);
+    }
 }
