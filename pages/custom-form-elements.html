@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../components/component/component.css">
     <link rel="stylesheet" href="../components/menu/menu.css">
     <link rel="stylesheet" href="../09-lection7/01-burger-menu/burger-menu.css">
+    <link rel="stylesheet" href="../07-lection5/01-checkbox/checkbox.css">
+    <link rel="stylesheet" href="../07-lection5/02-radio/radio.css">
     <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style type='text/css'>
@@ -64,8 +66,73 @@
           </div>
         </aside>
         <div class='component'>
-          <p class='component__title'>Title</p>
-          <div class='component__body'></div>
+          <p class='component__title'>Custom form elements</p>
+          <div class='component__body component__body_custom-form-elements'>
+            <div class='component__wrapper-custom-form-elements'>
+              <label class='checkbox'>
+                <input type='checkbox' class='checkbox__input'>
+                <span class='checkbox__state'>
+                    <span class='checkbox__control'>
+                        <svg class='checkbox__icon' width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span class='checkbox__label'>Default</span>
+                </span>
+              </label>
+              <label class='checkbox'>
+                <input type='checkbox' class='checkbox__input'>
+                <span class='checkbox__state'>
+                    <span class='checkbox__control'>
+                        <svg class='checkbox__icon' width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span class='checkbox__label'>Checked</span>
+                </span>
+              </label>
+              <label class='checkbox'>
+                <input type='checkbox' class='checkbox__input' disabled>
+                <span class='checkbox__state'>
+                    <span class='checkbox__control'>
+                        <svg class='checkbox__icon' width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span class='checkbox__label'>Disabled</span>
+                </span>
+              </label>
+            </div>
+            <div class='component__wrapper-custom-form-elements'>
+              <label class='radio'>
+                <input type='radio' class='radio__input' name='radio-name'>
+                <span class='radio__state'>
+                     <span class='radio__control'>
+                        <span class='radio__icon'></span>
+                     </span>
+                     <span class='radio__label'>Default</span>
+                </span>
+              </label>
+              <label class='radio'>
+                <input type='radio' class='radio__input' name='radio-name'>
+                <span class='radio__state'>
+                    <span class='radio__control'>
+                        <span class='radio__icon'></span>
+                    </span>
+                    <span class='radio__label'>Selected</span>
+                </span>
+              </label>
+              <label class='radio'>
+                <input type='radio' class='radio__input' name='radio-name' disabled>
+                <span class='radio__state'>
+                     <span class='radio__control'>
+                          <span class='radio__icon'></span>
+                     </span>
+                     <span class='radio__label'>Disabled</span>
+                </span>
+              </label>
+            </div>
+          </div>
         </div>
       </main>
       <footer class='footer footer_template'>

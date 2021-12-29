@@ -18,6 +18,22 @@
     padding-top: 20px;
 }
 
+.component__body_tooltip {
+    padding: 100px 0 0 70px;
+}
+
+.component__body_custom-form-elements {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.component__wrapper-custom-form-elements {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 @media screen and (min-width: 768px) {
     .component {
         background: var(--white);
@@ -34,6 +50,10 @@
 
     .component__body {
         padding-top: 24px;
+    }
+
+    .component__body_tooltip {
+        padding: 100px 0 0 70px;
     }
 }
 
