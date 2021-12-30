@@ -18,17 +18,17 @@
     padding-top: 20px;
 }
 
-.component__body_tooltip {
+.component__body_max-padding {
     padding: 100px 0 0 70px;
 }
 
-.component__body_custom-form-elements {
+.component__body_flex-row {
     display: flex;
     flex-direction: row;
     gap: 40px;
 }
 
-.component__wrapper-custom-form-elements {
+.component__wrapper {
     display: inline-flex;
     flex-direction: column;
     gap: 16px;
