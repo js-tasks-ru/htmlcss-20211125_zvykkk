@@ -46,7 +46,7 @@
     display: inline-block;
 }
 
-.tooltip__icon_card {
+.tooltip_card .tooltip__icon {
     height: 19px;
     width: 19px;
     position: relative;
@@ -54,7 +54,7 @@
     cursor: default;
 }
 
-.tooltip__bubble_card {
+.tooltip_card .tooltip__bubble {
     border-radius: 8px;
     padding: 10px 19px 6px;
     font-size: 13px;
@@ -67,13 +67,13 @@
 }
 
 @media screen and (min-width: 768px) {
-    .tooltip__icon_card {
+    .tooltip_card .tooltip__icon {
         height: 22px;
         width: 22px;
         bottom: 0;
     }
 
-    .tooltip__bubble_card {
+    .tooltip_card .tooltip__bubble {
         border-radius: 10px;
         padding: 13px 21px 8px;
         font-size: 16px;

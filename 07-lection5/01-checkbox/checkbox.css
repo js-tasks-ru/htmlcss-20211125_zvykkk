@@ -71,22 +71,22 @@
     color: var(--grey-2);
 }
 
-.checkbox__icon_card {
+.checkbox_card .checkbox__icon{
     width: 11px;
     height: 9px;
 }
 
-.checkbox__label_card {
+.checkbox_card .checkbox__label {
     font-size: 10px;
     line-height: 14px;
     margin-left: 7px;
 }
 
-.checkbox__state_card {
+.checkbox_card .checkbox__state {
     cursor: default;
 }
 
-.checkbox__control_card {
+.checkbox_card .checkbox__control {
     width: 18px;
     height: 18px;
     border-radius: 3px;
@@ -98,18 +98,18 @@
 }
 
 @media screen and (min-width: 768px) {
-    .checkbox__icon_card {
+    .checkbox_card .checkbox__icon {
         width: 15px;
         height: 13px;
     }
 
-    .checkbox__label_card {
+    .checkbox_card .checkbox__label {
         font-size: 16px;
         line-height: 24px;
         margin-left: 12px;
     }
 
-    .checkbox__control_card {
+    .checkbox_card .checkbox__control {
         width: 28px;
         height: 28px;
         border-radius: 4px;

@@ -87,18 +87,18 @@
     margin-left: 8px;
 }
 
-.calendar__title_card {
+.calendar_card .calendar__title {
     margin: 0 0 5px;
     font-size: 12px;
     line-height: 13px;
 }
 
-.calendar__item_card {
+.calendar_card .calendar__item {
     font-size: 9px;
     line-height: 9px;
 }
 
-.calendar__item_whitespace_card {
+.calendar_card .calendar__item_whitespace {
     padding-bottom: 3px;
 }
 
@@ -110,18 +110,18 @@
         border: 1px solid var(--grey-3);
     }
 
-    .calendar__title_card {
+    .calendar_card .calendar__title {
         margin: 0 0 24px;
         font-size: 12px;
         line-height: 14px;
     }
 
-    .calendar__item_card {
+    .calendar_card .calendar__item {
         font-size: 9px;
         line-height: 12px;
     }
 
-    .calendar__item_whitespace_card {
+    .calendar_card .calendar__item_whitespace{
         padding-bottom: 25px;
     }
 }

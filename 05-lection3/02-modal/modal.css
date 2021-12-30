@@ -73,22 +73,22 @@
     height: auto;
 }
 
-.modal__window_card {
+.modal_card .modal__window {
     padding: 10px 10px 8px 10px;
 }
 
-.modal__content_card {
+.modal_card .modal__content {
     font-size: 8px;
     line-height: 10px;
 }
 
-.modal__title_card {
+.modal_card .modal__title {
     margin: 0 0 8px;
     font-size: 11px;
     line-height: 13px;
 }
 
-.modal__close_card {
+.modal_card .modal__close {
     right: 10px;
     top: 10px;
     cursor: default;
@@ -101,16 +101,16 @@
         padding: 20px;
     }
 
-    .modal__window_card {
+    .modal_card .modal__window {
         padding: 15px 20px 16px 20px;
     }
 
-    .modal__content_card {
+    .modal_card .modal__content {
         font-size: 12px;
         line-height: 20px;
     }
 
-    .modal__title_card {
+    .modal_card .modal__title{
         margin: 0 0 14px;
         font-size: 16px;
         line-height: 20px;
