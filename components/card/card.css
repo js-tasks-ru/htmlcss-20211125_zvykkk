@@ -13,6 +13,13 @@
 
 .card__component-preview {
     flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    padding: 10px 11px;
 }
 
 .card__body {
@@ -31,6 +38,18 @@
 
     text-align: center;
     color: var(--black);
+}
+
+.card__component-preview_custom-form {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__wrapper-custom-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -53,5 +72,13 @@
         line-height: 25px;
 
         color: var(--black);
+    }
+
+    .card__component-preview {
+        padding: 20px 34px 0 34px;
+    }
+
+    .card__wrapper-custom-form {
+        gap: 16px;
     }
 }

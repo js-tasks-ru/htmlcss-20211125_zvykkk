@@ -1,11 +1,11 @@
-    .checkbox {
+.checkbox {
     display: inline-flex;
     flex-direction: column;
 }
 
 .checkbox__input {
     position: absolute;
-    clip: rect(0,0,0,0);
+    clip: rect(0, 0, 0, 0);
     opacity: 0;
 }
 
@@ -69,4 +69,49 @@
 
 .checkbox__input[disabled] ~ .checkbox__state .checkbox__label {
     color: var(--grey-2);
+}
+
+.checkbox_card .checkbox__icon{
+    width: 11px;
+    height: 9px;
+}
+
+.checkbox_card .checkbox__label {
+    font-size: 10px;
+    line-height: 14px;
+    margin-left: 7px;
+}
+
+.checkbox_card .checkbox__state {
+    cursor: default;
+}
+
+.checkbox_card .checkbox__control {
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+}
+
+.checkbox__control_checked {
+    background: var(--primary-1);
+    border-color: var(--primary-1);
+}
+
+@media screen and (min-width: 768px) {
+    .checkbox_card .checkbox__icon {
+        width: 15px;
+        height: 13px;
+    }
+
+    .checkbox_card .checkbox__label {
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 12px;
+    }
+
+    .checkbox_card .checkbox__control {
+        width: 28px;
+        height: 28px;
+        border-radius: 4px;
+    }
 }

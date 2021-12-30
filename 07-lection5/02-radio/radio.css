@@ -5,7 +5,7 @@
 
 .radio__input {
     position: absolute;
-    clip: rect(0,0,0,0);
+    clip: rect(0, 0, 0, 0);
     opacity: 0;
 }
 
@@ -71,4 +71,52 @@
 
 .radio__input[disabled] ~ .radio__state .radio__label {
     color: var(--grey-2);
+}
+
+.radio_card .radio__state{
+    cursor: default;
+}
+
+.radio_card .radio__control {
+    width: 18px;
+    height: 18px;
+}
+
+.radio__control_checked {
+    border-color: var(--primary-1);
+}
+
+.radio_card .radio__label {
+    font-size: 10px;
+    line-height: 14px;
+    margin-left: 7px;
+}
+
+.radio_card .radio__icon {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+}
+
+.radio__icon_checked {
+    background: var(--primary-1);
+}
+
+@media screen and (min-width: 768px) {
+    .radio_card .radio__label {
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 12px;
+    }
+
+    .radio_card .radio__control {
+        width: 28px;
+        height: 28px;
+    }
+
+    .radio_card .radio__icon {
+        width: 18px;
+        height: 18px;
+        border-radius: 9px;
+    }
 }
