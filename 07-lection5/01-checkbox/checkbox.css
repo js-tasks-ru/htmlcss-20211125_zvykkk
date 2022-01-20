@@ -26,6 +26,35 @@
     position: relative;
 }
 
+.checkbox__control:after {
+    content: '';
+    width: 28px;
+    height: 28px;
+    box-sizing: border-box;
+    z-index: 0;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 4px;
+    left: 0;
+    top: 0;
+
+}
+
+@keyframes go {
+    0% {
+        background-color: var(--grey-3);
+    }
+    100% {
+        width: 250%;
+        height: 250%;
+        background-color: transparent;
+        border-radius: 20px;
+        left: -75%;
+        top: -75%;
+        /*transform: translate(-50%, -50%);*/
+    }
+}
+
 .checkbox__icon {
     position: absolute;
     top: 50%;
@@ -48,6 +77,10 @@
 .checkbox__input:checked ~ .checkbox__state .checkbox__control {
     background: var(--primary-1);
     border-color: var(--primary-1);
+}
+
+.checkbox__input:checked ~ .checkbox__state .checkbox__control:after {
+    animation: go 5s linear;
 }
 
 .checkbox__input:focus ~ .checkbox__state .checkbox__label {

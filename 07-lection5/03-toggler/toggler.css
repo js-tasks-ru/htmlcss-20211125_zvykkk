@@ -24,6 +24,7 @@
     border-radius: 14px;
     display: inline-flex;
     position: relative;
+    transition: background 300ms ease-in-out, border 300ms ease-in-out;
 }
 
 .toggler__icon {
@@ -32,6 +33,7 @@
     left: 2px;
     transform: translate(0, -50%);
     color: var(--grey-2);
+    transition: left 300ms ease-in-out, color 300ms ease-in-out;
 }
 
 .toggler__label {

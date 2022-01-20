@@ -16,7 +16,8 @@
     line-height: 19px;
     text-align: center;
 
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out,
+                transform 200ms ease-in-out;
     cursor: pointer;
 }
 
@@ -47,6 +48,10 @@
 }
 .button_alternate:hover {
     border-color: var(--grey-4);
+}
+
+.button:active {
+    transform: translateY(1px);
 }
 
 .button_burger-menu {
