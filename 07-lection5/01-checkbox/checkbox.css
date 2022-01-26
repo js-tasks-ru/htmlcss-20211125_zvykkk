@@ -26,32 +26,24 @@
     position: relative;
 }
 
-.checkbox__control:after {
+.checkbox__control:before {
     content: '';
     width: 28px;
     height: 28px;
     box-sizing: border-box;
-    z-index: 0;
-    position: absolute;
-    background-color: transparent;
     border-radius: 4px;
-    left: 0;
-    top: 0;
-
 }
 
 @keyframes go {
     0% {
+        transform: scale(1);
         background-color: var(--grey-3);
+        opacity: 0.3;
     }
     100% {
-        width: 250%;
-        height: 250%;
+        transform: scale(3);
         background-color: transparent;
-        border-radius: 20px;
-        left: -75%;
-        top: -75%;
-        /*transform: translate(-50%, -50%);*/
+        border-radius: 10px;
     }
 }
 
@@ -79,8 +71,8 @@
     border-color: var(--primary-1);
 }
 
-.checkbox__input:checked ~ .checkbox__state .checkbox__control:after {
-    animation: go 5s linear;
+.checkbox__input:checked ~ .checkbox__state .checkbox__control:before {
+    animation: go 300ms linear;
 }
 
 .checkbox__input:focus ~ .checkbox__state .checkbox__label {

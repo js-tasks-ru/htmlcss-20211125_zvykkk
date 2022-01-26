@@ -31,7 +31,14 @@
     --template: #E5E5E5;
     --notification: #D84910;
 
-    --linear-gradient: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+    --linear-gradient: linear-gradient(92.51deg, #dde2e5 6.44%, #e2e6e8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+    --linear-gradient-0: linear-gradient(92.51deg, #dde2e5,#f3f5f5);
+    --linear-gradient-17: linear-gradient(92.51deg,  #e2e6e8 0%, #dde2e5 17%, #e2e6e8 33%, #f3f5f5 100%);
+    --linear-gradient-34: linear-gradient(92.51deg, #f3f5f5 0%, #e2e6e8 18%, #dde2e5 34%, #e2e6e8 50%, #f3f5f5 100%);
+    --linear-gradient-50: linear-gradient(92.51deg,  #f3f5f5 0%, #e2e6e8 36%, #dde2e5 50%, #e3e7ea 65%, #f3f5f5 100%);
+    --linear-gradient-67: linear-gradient(92.51deg,   #f3f5f5 0%, #e2e6e8 52%, #dde2e5 67%, #e3e7ea 82%, #f3f5f5 100%);
+    --linear-gradient-83: linear-gradient(92.51deg,  #f3f5f5 0%, #e2e6e8 68%, #dde2e5 83%, #e3e7ea 100%);
+    --linear-gradient-100: linear-gradient(92.51deg, #f3f5f5 0% ,#e3e7ea 75% ,#dde2e5 100%);
 
     --burger: rgba(249, 250, 252, 1);
 }
