@@ -60,6 +60,18 @@
     display: flex;
     gap: 1px;
     height: 50px;
+
+    animation: go 400ms linear;
+}
+
+@keyframes go {
+    0% {
+        transform: scaleY(0);
+        transform-origin: bottom;
+    }
+    100% {
+        transform: scaleY(1);
+    }
 }
 
 .histogram__item {

@@ -24,6 +24,8 @@
     height: 64px;
     border-radius: 32px;
     background: var(--grey-2);
+    animation: go 1s linear;
+    animation-iteration-count: infinite;
 }
 
 .skeleton__box{
@@ -35,7 +37,32 @@
 
 .skeleton__item{
     height: 20px;
-    background: var(--linear-gradient);
+    animation: go 1s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes go {
+    0% {
+        background: var(--linear-gradient-0);
+    }
+    17% {
+        background: var(--linear-gradient-17);
+    }
+    34% {
+        background: var(--linear-gradient-34);
+    }
+    50% {
+        background: var(--linear-gradient-50);
+    }
+    67% {
+        background: var(--linear-gradient-67);
+    }
+    83% {
+        background: var(--linear-gradient-83);
+    }
+    100% {
+        background: var(--linear-gradient-100);
+    }
 }
 
 .skeleton__item_small {
@@ -45,5 +72,4 @@
 .skeleton__item_medium {
     width: 60%;
 }
-
 
